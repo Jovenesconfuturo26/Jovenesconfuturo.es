@@ -6,113 +6,316 @@
 
 <title>Jóvenes con Futuro</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f5f1e8;
-    color:#333;
+font-family:Montserrat,sans-serif;
+background:#f5f0e6;
+color:#222;
+line-height:1.6;
 }
 
 header{
-    background:#2f6b3d;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+background:#f5f0e6;
+padding:60px 20px;
+text-align:center;
+border-bottom:4px solid #0d5b3d;
 }
 
 header h1{
-    font-size:3rem;
-    margin:0;
+font-family:Oswald,sans-serif;
+font-size:5rem;
+color:#0d5b3d;
+line-height:1;
+}
+
+header h2{
+font-size:2rem;
+color:#0d5b3d;
+margin-top:10px;
 }
 
 header p{
-    font-size:1.2rem;
+max-width:900px;
+margin:30px auto;
+font-size:1.1rem;
+}
+
+.hero-img{
+width:100%;
+max-width:700px;
+border-radius:10px;
+margin-top:20px;
+}
+
+nav{
+background:#0d5b3d;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
 
 section{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px;
+padding:80px 10%;
+}
+
+.section-title{
+font-family:Oswald,sans-serif;
+font-size:3rem;
+color:#0d5b3d;
+margin-bottom:30px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    margin:20px 0;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+margin-top:20px;
 }
 
-img{
-    width:100%;
-    border-radius:15px;
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:1.2rem;
+font-style:italic;
+color:#0d5b3d;
+margin-top:20px;
+}
+
+.finanzas-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.finanzas-item{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.finanzas-item h3{
+color:#0d5b3d;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+background:#0d5b3d;
+color:white;
+padding:12px 24px;
+border-radius:30px;
+text-decoration:none;
+margin-top:20px;
 }
 
 footer{
-    background:#2f6b3d;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#0d5b3d;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.socials a{
+color:white;
+margin:0 10px;
+font-size:1.1rem;
+text-decoration:none;
 }
 
 </style>
-
 </head>
+
 <body>
 
 <header>
-<h1>Jóvenes con Futuro</h1>
-<p>Pequeñas acciones, grandes cambios</p>
+
+<h1>JÓVENES</h1>
+<h2>CON FUTURO</h2>
+
+<p>
+Pequeñas acciones, grandes cambios.
+Un proyecto sostenible que impulsa el comercio local,
+la solidaridad social, la moda sostenible y la educación financiera.
+</p>
+
+<img src="portada.jpg" class="hero-img">
+
 </header>
 
-<section>
+<nav>
+<a href="#sostenibilidad">Sostenibilidad</a>
+<a href="#aris">ARIS</a>
+<a href="#caritas">Cáritas</a>
+<a href="#finanzas">Finanzas</a>
+<a href="#equipo">Equipo</a>
+</nav>
+
+<section id="sostenibilidad">
+
+<h2 class="section-title">Cuidar el hoy para tener un mañana</h2>
 
 <div class="card">
-<h2>¿Quiénes somos?</h2>
+
+<img src="reciclamoda.jpg">
+
 <p>
-Somos una plataforma creada por jóvenes para promover la sostenibilidad,
-la educación financiera y el impacto social.
+El consumo responsable ayuda a reducir residuos,
+apoyar negocios locales y construir un futuro más sostenible.
 </p>
+
+<p class="quote">
+"Consume con conciencia para que el mundo no pierda su esencia."
+</p>
+
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<h2>Sostenibilidad</h2>
-<p>
-Fomentamos hábitos responsables para construir un futuro mejor.
-</p>
-</div>
+</section>
+
+<section id="aris">
+
+<h2 class="section-title">Innovación local que se convierte en impacto global</h2>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
-<h2>Comercio Local</h2>
+
+<img src="aris.jpg">
+
 <p>
-Apoyamos pequeños negocios que fortalecen nuestras comunidades.
+Los comercios locales son el corazón de nuestros barrios.
+Gracias a nuestra entrevista con la peluquería ARIS descubrimos
+cómo un pequeño negocio puede generar confianza,
+empleo y compromiso con el medio ambiente.
 </p>
+
+<p class="quote">
+"Nuestra peluquería aporta confianza."
+</p>
+
+<a href="ENTREVISTA_PELUQUERIA.pdf" class="btn">
+Leer entrevista completa
+</a>
+
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-<h2>Educación Financiera</h2>
-<p>
-Explicamos conceptos económicos de forma sencilla para los jóvenes.
-</p>
-</div>
+</section>
+
+<section id="caritas">
+
+<h2 class="section-title">Ayudar también es acompañar</h2>
 
 <div class="card">
-<h2>Nuestra Revista</h2>
+
+<img src="caritas.jpg">
+
 <p>
-Consulta la primera edición de Jóvenes con Futuro y descubre nuestras entrevistas,
-reportajes y proyectos.
+Cáritas trabaja para acompañar a las personas más vulnerables,
+ofreciendo apoyo humano, orientación y ayuda social.
 </p>
+
+<p class="quote">
+"No se trata de mirar desde arriba, se trata de mirar de igual a igual."
+</p>
+
+<a href="ENTREVISTA_CARITAS.pdf" class="btn">
+Leer entrevista completa
+</a>
+
+</div>
+
+</section>
+
+<section id="finanzas">
+
+<h2 class="section-title">Tus decisiones hoy, tu futuro mañana</h2>
+
+<div class="finanzas-grid">
+
+<div class="finanzas-item">
+<h3>💰 Ahorra</h3>
+<p>Guarda parte de tus ingresos para objetivos futuros.</p>
+</div>
+
+<div class="finanzas-item">
+<h3>🛍️ Consume con conciencia</h3>
+<p>Compra solo aquello que realmente necesitas.</p>
+</div>
+
+<div class="finanzas-item">
+<h3>🌱 Invierte en valores</h3>
+<p>Apoya proyectos responsables y sostenibles.</p>
+</div>
+
+<div class="finanzas-item">
+<h3>📚 Infórmate</h3>
+<p>Aprende sobre educación financiera y economía.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="equipo">
+
+<h2 class="section-title">Nuestro Equipo</h2>
+
+<div class="card">
+
+<p><strong>Anella Testa</strong></p>
+<p><strong>Natalia González</strong></p>
+<p><strong>Ariadna Yuste</strong></p>
+<p><strong>Sonsoles Bermejo</strong></p>
+
+<br>
+
+<p>
+4º ESO D · Colegio Torrevillano
+</p>
+
 </div>
 
 </section>
 
 <footer>
-Jóvenes con Futuro © 2026
+
+<h3>Síguenos</h3>
+
+<div class="socials">
+<a href="https://instagram.com/jovenesconfuturo" target="_blank">
+Instagram @jovenesconfuturo
+</a>
+</div>
+
+<br>
+
+<p>
+Jóvenes con Futuro · Edición Nº1 · 2026
+</p>
+
 </footer>
 
 </body>
