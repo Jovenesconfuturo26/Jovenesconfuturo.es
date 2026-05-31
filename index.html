@@ -1,126 +1,154 @@
-<header>
+<!DOCTYPE html>
+<html lang="es">
 
-<h1>JÓVENES CON FUTURO</h1>
+<head>
 
-<p style="
-font-size:2rem;
-font-weight:bold;
-color:#146b43;
-margin-top:25px;
-font-style:italic;
-">
-"Pequeñas acciones, grandes cambios"
-</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<img src="GRUPO.jpeg" class="hero">
+<title>Jóvenes con Futuro</title>
 
-<p style="
-max-width:900px;
-margin:auto;
-margin-top:35px;
-font-size:1.1rem;
-line-height:1.8;
-">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-Jóvenes con Futuro es una revista creada por estudiantes con el objetivo de promover la sostenibilidad,
-el comercio local, la educación financiera y el impacto social.
+<style>
 
-A través de entrevistas, reportajes y proyectos reales, buscamos demostrar que las pequeñas acciones
-pueden generar grandes cambios en nuestra comunidad y contribuir a construir un futuro más responsable,
-solidario y sostenible.
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-</p>
-
-</header>
+html{
+scroll-behavior:smooth;
+}
 
 body{
-font-family:Montserrat,sans-serif;
-background:#f4efe4;
+font-family:'Montserrat',sans-serif;
+background:#f5f0e6;
 color:#222;
+line-height:1.7;
 }
 
 header{
-background:#f4efe4;
-padding:80px 20px;
+padding:70px 10%;
 text-align:center;
 }
 
 header h1{
-font-family:Oswald,sans-serif;
-font-size:5rem;
+font-family:'Oswald',sans-serif;
+font-size:6rem;
+line-height:0.95;
 color:#146b43;
-line-height:1;
 }
 
-header p{
-max-width:800px;
-margin:auto;
-margin-top:20px;
-font-size:1.1rem;
+.eslogan{
+font-size:2rem;
+font-weight:700;
+color:#146b43;
+margin-top:25px;
+font-style:italic;
 }
 
 .hero{
 width:100%;
 max-width:900px;
-border-radius:15px;
 margin-top:40px;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.descripcion{
+max-width:950px;
+margin:40px auto 0;
+font-size:1.1rem;
 }
 
 nav{
 background:#146b43;
-padding:15px;
-text-align:center;
+padding:18px;
 position:sticky;
 top:0;
+z-index:999;
+text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
-font-weight:bold;
+font-weight:600;
+}
+
+nav a:hover{
+opacity:.8;
 }
 
 section{
 padding:80px 10%;
 }
 
-h2{
-font-family:Oswald,sans-serif;
-color:#146b43;
+.titulo{
+font-family:'Oswald',sans-serif;
 font-size:3rem;
-margin-bottom:30px;
+color:#146b43;
+margin-bottom:25px;
 }
 
 .card{
 background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-margin-bottom:30px;
+padding:35px;
+border-radius:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
 .card img{
 width:100%;
 border-radius:15px;
-margin-bottom:20px;
+margin-bottom:25px;
+}
+
+.frase{
+margin-top:20px;
+font-style:italic;
+font-weight:600;
+color:#146b43;
 }
 
 .boton{
 display:inline-block;
+margin-top:25px;
 padding:12px 25px;
 background:#146b43;
 color:white;
 text-decoration:none;
 border-radius:30px;
-margin-top:20px;
+font-weight:600;
 }
 
-.frase{
-font-style:italic;
+.boton:hover{
+background:#0f5133;
+}
+
+.finanzas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.finanzas div{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.finanzas h3{
 color:#146b43;
-margin-top:20px;
+margin-bottom:10px;
+}
+
+.equipo{
+text-align:center;
 font-size:1.1rem;
 }
 
@@ -131,6 +159,12 @@ padding:40px;
 text-align:center;
 }
 
+footer a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
 </style>
 
 </head>
@@ -139,15 +173,30 @@ text-align:center;
 
 <header>
 
-<h1>JÓVENES CON FUTURO</h1>
+<h1>JÓVENES<br>CON FUTURO</h1>
 
-<p>
-Pequeñas acciones, grandes cambios.
-Una revista creada por jóvenes para promover la sostenibilidad,
-el comercio local, la educación financiera y el impacto social.
+<p class="eslogan">
+"Pequeñas acciones, grandes cambios"
 </p>
 
 <img src="GRUPO.jpeg" class="hero">
+
+<div class="descripcion">
+
+<p>
+Jóvenes con Futuro es una revista creada por estudiantes con el objetivo de promover la sostenibilidad,
+la educación financiera, el comercio local y el impacto social.
+</p>
+
+<br>
+
+<p>
+A través de entrevistas, investigaciones y proyectos reales, buscamos demostrar que pequeñas acciones
+pueden generar grandes cambios en nuestro entorno y contribuir a construir una sociedad más responsable,
+solidaria y consciente.
+</p>
+
+</div>
 
 </header>
 
@@ -163,14 +212,17 @@ el comercio local, la educación financiera y el impacto social.
 
 <section id="sostenibilidad">
 
-<h2>Sostenibilidad</h2>
+<h2 class="titulo">
+Sostenibilidad
+</h2>
 
 <div class="card">
 
 <p>
-Creemos que las pequeñas decisiones del día a día pueden generar grandes cambios.
-Por eso investigamos iniciativas relacionadas con el consumo responsable,
-el reciclaje y la sostenibilidad.
+La sostenibilidad es uno de los pilares principales de nuestro proyecto.
+Creemos que las decisiones que tomamos hoy tienen un impacto directo en el futuro
+y por eso investigamos iniciativas relacionadas con el consumo responsable,
+el reciclaje y la protección del medio ambiente.
 </p>
 
 <p class="frase">
@@ -183,15 +235,22 @@ el reciclaje y la sostenibilidad.
 
 <section id="aris">
 
-<h2>Peluquería ARIS</h2>
+<h2 class="titulo">
+Comercio Local · Peluquería ARIS
+</h2>
 
 <div class="card">
 
 <img src="PELUQUERÍA.jpeg">
 
 <p>
-Conocimos de cerca la historia de ARIS, un negocio local comprometido
-con la atención personalizada, la sostenibilidad y el emprendimiento.
+Entrevistamos a los responsables de la peluquería ARIS para conocer la realidad
+de los pequeños negocios locales, sus desafíos y su compromiso con la sostenibilidad.
+</p>
+
+<p>
+Su historia demuestra la importancia del emprendimiento, la cercanía con los clientes
+y el papel fundamental que tienen los comercios de barrio en nuestra comunidad.
 </p>
 
 <p class="frase">
@@ -208,15 +267,23 @@ Leer entrevista completa
 
 <section id="caritas">
 
-<h2>Cáritas</h2>
+<h2 class="titulo">
+Impacto Social · Cáritas
+</h2>
 
 <div class="card">
 
 <img src="DON JAVIER.jpeg">
 
 <p>
-Entrevistamos a Don Javier para conocer el trabajo que realiza Cáritas
-acompañando y ayudando a personas en situación de vulnerabilidad.
+A través de nuestra entrevista con Don Javier descubrimos la labor que realiza
+Cáritas ayudando a personas en situación de vulnerabilidad y promoviendo valores
+como la solidaridad, la empatía y el acompañamiento humano.
+</p>
+
+<p>
+Su trabajo demuestra la importancia de construir comunidades más unidas y comprometidas
+con quienes más lo necesitan.
 </p>
 
 <p class="frase">
@@ -233,14 +300,31 @@ Leer entrevista completa
 
 <section id="finanzas">
 
-<h2>Educación Financiera</h2>
+<h2 class="titulo">
+Educación Financiera
+</h2>
 
-<div class="card">
+<div class="finanzas">
 
-<p>💰 Aprende a ahorrar.</p>
-<p>📊 Organiza tus gastos.</p>
-<p>🏦 Entiende conceptos financieros.</p>
-<p>🌱 Toma decisiones responsables.</p>
+<div>
+<h3>💰 Ahorro</h3>
+<p>Aprender a gestionar nuestros recursos para alcanzar objetivos futuros.</p>
+</div>
+
+<div>
+<h3>📊 Organización</h3>
+<p>Conocer la diferencia entre ingresos, gastos y presupuestos.</p>
+</div>
+
+<div>
+<h3>🏦 Responsabilidad</h3>
+<p>Tomar decisiones económicas conscientes y sostenibles.</p>
+</div>
+
+<div>
+<h3>📚 Aprendizaje</h3>
+<p>Comprender conceptos financieros básicos para el día a día.</p>
+</div>
 
 </div>
 
@@ -248,9 +332,11 @@ Leer entrevista completa
 
 <section id="equipo">
 
-<h2>Nuestro Equipo</h2>
+<h2 class="titulo">
+Equipo
+</h2>
 
-<div class="card">
+<div class="card equipo">
 
 <p><strong>Anella Testa</strong></p>
 <p><strong>Natalia González</strong></p>
@@ -260,7 +346,7 @@ Leer entrevista completa
 <br>
 
 <p>
-4º ESO · Proyecto Jóvenes con Futuro
+Proyecto realizado por alumnas de 4º ESO.
 </p>
 
 </div>
@@ -269,18 +355,26 @@ Leer entrevista completa
 
 <footer>
 
-<p><strong>Instagram:</strong> @jovenesconfuturo</p>
+<p>
+📱 Instagram:
+<a href="https://instagram.com/jovenesconfuturo" target="_blank">
+@jovenesconfuturo
+</a>
+</p>
 
 <br>
 
 <p>
-Jóvenes con Futuro © 2026
+Jóvenes con Futuro · Revista digital sobre sostenibilidad, educación financiera e impacto social.
 </p>
 
 </footer>
 
 </body>
-
 </html>
+
+
+
+
 
 
